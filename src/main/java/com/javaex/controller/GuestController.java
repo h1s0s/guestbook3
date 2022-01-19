@@ -30,7 +30,7 @@ public class GuestController {
 		List<GuestbookVo> guestbookList = new GuestbookDao().getList();
 		model.addAttribute("guestbookList", guestbookList);
 		
-		return "/WEB-INF/views/addList.jsp";
+		return "addList";
 	}
 
 	@RequestMapping(value = "/add", method = { RequestMethod.GET, RequestMethod.POST })
@@ -48,7 +48,7 @@ public class GuestController {
 		
 		model.addAttribute("no", no);
 		
-		return "/WEB-INF/views/deleteForm.jsp";
+		return "deleteForm";
 	}
 	@RequestMapping(value = "/delete", method = { RequestMethod.GET, RequestMethod.POST })
 	public String delete(@RequestParam("no") int no,
