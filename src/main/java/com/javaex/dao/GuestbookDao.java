@@ -8,8 +8,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import com.javaex.vo.GuestbookVo;
 
 public class GuestbookDao {
@@ -20,7 +18,7 @@ public class GuestbookDao {
 	ResultSet rs = null;
 
 	private String driver = "oracle.jdbc.driver.OracleDriver";
-	private String url = "jdbc:oracle:thin:@172.30.1.55:1521:xe";
+	private String url = "jdbc:oracle:thin:@192.168.0.68:1521:xe";
 	private String id = "webdb";
 	private String pw = "webdb";
 
